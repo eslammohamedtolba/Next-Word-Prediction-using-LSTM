@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #e3f2fd);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
+    background-color: #fafafa;
+}
+
+h1 {
+    text-align: center;
+    color: #1e88e5; /* Bright blue */
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+textarea, input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus, input[type="number"]:focus {
+    border-color: #1e88e5; /* Bright blue border on focus */
+    box-shadow: 0 0 10px rgba(30, 136, 229, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff5722, #ff8a65); /* Warm orange gradient */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff8a65, #ff5722);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light blue gradient */
+    border-left: 8px solid #1e88e5; /* Bright blue border */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result:hover {
+    background: linear-gradient(135deg, #bbdefb, #e3f2fd);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.result p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}

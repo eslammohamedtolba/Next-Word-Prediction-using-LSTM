@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Word Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Next Word Prediction</h1>
+        <form method="post" action="/predict">
+            <label for="Text">Enter your text:</label>
+            <textarea id="Text" name="Text" rows="4" cols="50" required></textarea>
+            <label for="N_words">Number of words to predict:</label>
+            <input type="number" id="N_words" name="N_words" value="1" min="1" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <p>{{ prediction }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
